@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <style>
+
+*{
+   height: fit-content;
+   width: fit-content;
+   size: 0ch;
+}
+body{
+   background-color: rgb(192, 189, 197);
+   text-align: justify;
+   
+}
+h2{
+   background-color:rgb(121, 116, 165) ;
+
+}
+button{
+   color: rgb(35, 6, 116);
+}
+ a{
+   color: rgb(252, 8, 8);
+   text-align: center;
+}
+
+.d-none{
+
+
+ display:none;
+}
+
+
+
+
+
+        </style>
+        <title>
+               data edit and update
+        </title>
+        <link src="stylesheet"href="index.css">
+        <script src="index.js"></script>
+    </head>
+    
+    <body>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <b>
+           <span id="textData"></span>
+           <input type="text" id="inputData" placeholder="sujeet kumar" class="d-none">
+       </b>
+        <br>  
+           <button id="signoutData" onclick="signout()"><a href="index.html">signout</a></button>
+       <br>
+           <h2>personal information</h2>
+        <br>
+        
+             AGE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <b> 
+             <span id="ageData"></span> 
+             <input type="number" id="aageData" placeholder="26" class="d-none">
+             </b>
+       <br>
+           GENDER:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <b> 
+             <span id="genderData"></span> 
+             <input type="gender" id="gennData" placeholder="male" class="d-none">
+             </b>
+        <br>
+            
+           COURSE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <b>
+           <span id="eduData"></span> 
+           <input type="text" id="eeduData" placeholder="B.tech"name="course" class="d-none">
+           </b>
+       <br>
+           DISCIPLINE:&nbsp;&nbsp;&nbsp;&nbsp;
+           <b>
+          <span id="lineData"></span> 
+         <input type="line" id="lineeData" placeholder="INFORMATION TECHNOLOGY" class="d-none">
+          </b>
+       <br>
+       CONTACT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+       <b>
+           <span id="conData"></span> 
+           <input type="number" id="connData" placeholder="7599530184" class="d-none">
+       </b>
+       <br>
+       DOB:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <b> 
+           <span id="dobData"></span> 
+           <input type="date" id="dobbData" placeholder="16/08/1996" class="d-none">
+       </b>
+       <br>
+       No.OF BACKLOGS:&nbsp;&nbsp;&nbsp;&nbsp;
+       <b>
+       <span id="backData"></span> 
+       <input type="number" id="backkData" placeholder="0" class="d-none">
+        </b>
+       <br>
+       <h2><u>ADDRESS:</u></h2>
+       COLONY:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+       <b>
+           <span id="colData"></span> 
+       <input type="col" id="collData" placeholder="patel nagar" class="d-none">
+       </b>
+       <br>
+       CITY:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <b> 
+           <span id="citData"></span> 
+         <input type="cit" id="cittData" placeholder="mughalsarai" class="d-none">
+       </b>
+       <br>
+       DISTRICT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <b> 
+       <span id="disData"></span>
+       <input type="dis" id="distData" placeholder="chandaulli" class="d-none">
+       </b>
+       <br>
+       PINCODE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <b> 
+           <span id="pinData"></span> 
+       <input type="number" id="pinnData" placeholder="232101" class="d-none">
+       </b>
+       <br>
+       STATE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <b> 
+           <span id="staData"></span>
+       <input type="sta" id="statData" placeholder="uttar pradesh" class="d-none">
+       </b>
+       <br><br>
+   
+       
+            <button id="editData" onclick="edit()">Edit</button>
+            <button id="updateData" onclick="update()" class="d-none">update</button>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      angular
+    </title>
+    <link rel="stylesheet" href="h.css">
+  </head>
+
+<body>
+  
+  
+<mat-card>
+  <mat-card-content>
+    <div class="header">
+      <br><br><br><br><br><br>
+      <P><b><h1>Sign Into Your Account<h1></b> </P>
+    </div>
+    
+    <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+      <div class="emailInput">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label><b>Email:</b></mat-label>
+          <input
+            formControlName="email"
+            matInput
+            placeholder="Enter email address" required
+          />
+          <mat-error *ngIf="!loginForm.controls['email'].valid">
+              
+            </mat-error><br><br>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <span>
+          <a class="text-link" class="aLink" routerLink="/auth/forgot-password"></a>
+        </span>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label><b>Password:</b></mat-label>
+          <input formControlName="password" matInput placeholder=" enter password"  required />
+          
+          
+          <mat-icon>
+              
+          </mat-icon>
+      </button>
+      <mat-error *ngIf="!loginForm.controls['password'].valid">
+          
+        </mat-error>
+      </mat-form-field>
+      </div>
+      <br><br>
+      <button mat-flat-button color="primary"><b><a href="sujeet.html">LOGIN</a></b></button>
+      
+
+    </form> 
+
+    <div class="button-row">
+      <p></p>
+    </div>
+  </mat-card-content>
+</mat-card>
+</body>
+</html>
